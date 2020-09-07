@@ -25,7 +25,7 @@ class Post(models.Model):
 
 
 class Comments(models.Model):
-    post = models.ForeignKey('blog.post',related_name='comments')
+    post = models.ForeignKey('blog.Post',related_name='comments')
     author = models.CharField(max_length=80)
     text = models.TextField()
     create_date = models.DateTimeField(default=timezone.now())
