@@ -1,6 +1,7 @@
 from django import forms
 from .models import Post, Comments
 
+# form for Post model
 class PostForm(forms.ModelForm):
     class Meta():
         model = Post
@@ -11,6 +12,7 @@ class PostForm(forms.ModelForm):
             'text':forms.Textarea(attrs={'class':'editable medium-editor-textarea postcontent'})
         }
 
+# form for Comments model
 class CommentForm(forms.ModelForm):
     class Meta():
         model = Comments
