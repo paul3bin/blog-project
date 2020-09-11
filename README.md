@@ -1,2 +1,2 @@
 # blog_clone_project
-A clone of company blogs using HTML, CSS, JavaScript and Django
+A single user blogging website using HTML, CSS, JavaScript and Django
